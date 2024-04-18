@@ -25,7 +25,7 @@ async function getEvent(){
             try {
                 const weight = Number(mensaje.content);
                 if(weight>0){
-                    const response = await axios.post('http://localhost:3000/readings',{weight:weight});
+                    const response = await axios.post('https://api-hexagonal-proyecto.onrender.com/readings',{weight:weight});
                 }
             } catch (error) {
                 console.log("Error sending to API");   
